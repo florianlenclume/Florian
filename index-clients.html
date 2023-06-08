@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron & MySQL</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+<body>
+
+  <main class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-md-6 p-4 my-auto">
+
+        <!-- Produit Form -->
+        <form id="produitForm" class="card card-body">
+          <div class="form-group">
+            <input type="text" id="nomClient" placeholder="Nom du client : " class="form-control" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="text" id="prenomClient" placeholder="Prenom du client : " class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="E-mail : " class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" id="motdepasse" placeholder="Mot de passe : " class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Save
+          </button>
+          
+        </form>
+
+      </div>
+
+      <!-- Produit List -->
+      <div class="col-md-6">
+        <div id="produits"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
